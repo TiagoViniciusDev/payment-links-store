@@ -1,0 +1,127 @@
+.Product .container .div1{
+    display: flex;
+    gap: 1.5em;
+}
+
+.Product .container .div1 .productImgs{
+    display: flex;
+    gap: 0.5em;
+}
+
+.Product .container .div1 .productImgs .sideImgs{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    max-height: 24em;
+}
+
+.Product .container .div1 .productImgs .sideImgs .img{
+    width: 6em;
+    height: 6em;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.Product .container .div1 .productImgs .mainImg{
+    width: 24em;
+    height: 24em;
+    background-size: cover;
+}
+
+.Product .container .div1 .productInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    padding-left: 1em;
+}
+
+.Product .container .div1 .productInfo .feedback{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.Product .container .div1 .productInfo .feedback .starsIcon{
+    display: flex;
+    gap: 0.1em;
+    align-items: center;
+}
+
+.Product .container .div1 .productInfo .feedback .starsIcon svg{
+    color: #ffd814;
+}
+
+.Product .container .div1 .productInfo .price{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.Product .container .div1 .productInfo .buttons{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.Product .container .div1 .productInfo .buttons a{
+    cursor: pointer;
+    padding: 0.5em 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    background-color: #008723;
+    font-weight: bold;
+}
+
+.Product .container .div1 .productInfo .buttons a:hover{
+    opacity: 0.9;
+}
+
+.Product .container .div1 .productInfo .category{
+ margin-top: 1em;
+}
+
+.Product .container .div1 .productInfo .category span{
+    color: gray;
+}
+
+.Product .container .div2{
+    margin-top: 2em;
+}
+
+.Product .container .div2 .desc h2{
+    margin-bottom: 0.5em;
+}
+
+.Product .container .div2 .desc p{
+    white-space: pre-wrap;
+}
+
+.Product .container .comments{
+    margin: 2em 0;
+}
+
+.Product .container .comments p{
+    margin-top: 0.5em;
+}
+
+@media screen and (max-width: 850px) {
+    .Product .container .div1 .productImgs{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .Product .container .div1 .productImgs .sideImgs{
+        flex-direction: row;
+    }
+
+    .Product .container .div1{
+        flex-direction: column;
+    }
+
+    .Product .container .div1 .productInfo{
+        align-items: center;
+        text-align: center;
+    }
+}

@@ -1,0 +1,43 @@
+.ProdutoContainer{
+    cursor: pointer;
+    width: min-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5em;
+    height: 100%;
+    padding-bottom: 1em;
+    padding: 1em;
+
+    border: 1px solid rgb(80, 80, 80);
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 0.3em;
+}
+
+.ProdutoContainer .productHeader .productImg{
+    width: 20em;
+    height: 20em;
+    background-size: cover;
+    background-position: center; 
+}
+
+.ProdutoContainer .productHeader p{
+    margin-top: 0.5em;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.ProdutoContainer .productFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    gap: 0.5em;
+}
+
+.ProdutoContainer .productFooter .price{
+    margin-top: 0.5em;
+    color: white;
+    font-size: 1.5em;
+}

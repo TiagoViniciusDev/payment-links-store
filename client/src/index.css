@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container{
+  width: 96%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+body{
+  background-color: var(--bg);
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+:root{
+  --cor-principal: #e90313;
+  --bg: #303030;
+  --green1: #00a202;
+  --AdminBg: #314556;
+  --AdminBg2: #364e63;
+  --AdminBg3: #263542;
+  --paddingAdmPages: 2em 3em;
+}
+
+/* Sing */
+
+.Sing{
+  text-align: center;
+  width: 94%;
+  max-width: 30em;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border: 1px solid black;
+  padding: 2em;
+  margin: 2em 0;
+}
+
+.Sing .container .text{
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Sing .container .text p:first-of-type{
+  font-weight: 700;
+}
+
+.Sing .container .text .icon{
+  width: fit-content;
+  background-color: var(--cor-principal);
+  padding: 1em;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+
+.Sing .container .text .icon img{
+  width: 2em;
+  height: 2em;
+}
+
+.Sing .container form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.Sing .container form input{
+  height: 3.5em;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5em;
+  padding: 0 1em;
+}
+
+.Sing .container form input::placeholder{
+  color: gray;
+}
+
+.Sing form button, .googleBtn{
+  background-color: #0171D3;
+  color: white;
+  height: 3em;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.Sing form button:nth-of-type(2), .googleBtn{
+  background-color: blue;
+}
+
+.Sing form button:hover, .googleBtn:hover{
+  opacity: 0.95;
+}
+
+.Sing .anotherForm{
+  margin-top: 1em;
+}
+
+.Sing .anotherForm p{
+  font-weight: 600;
+}
+
+.Sing .anotherForm p a{
+  color: #1b94d1;
+}
+
+.Sing .errorMsg{
+  color: red;
+}
+
+/*  */
+
+/* ADM PAGES */
+
+.admPage{
+  width: 100%;
+  margin: var(--paddingAdmPages);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+

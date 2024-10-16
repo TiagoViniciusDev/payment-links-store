@@ -1,0 +1,30 @@
+.MyProducts .options{
+    margin-bottom: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.MyProducts .options button{
+    padding: 1em 2em;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.MyProducts .options button:hover{
+    opacity: 0.9;
+    border: 1px solid white;
+}
+
+.MyProducts .options button:nth-of-type(1){
+    background-color: green;
+}
+
+.MyProducts .options button:nth-of-type(2){
+    background-color: red;
+}
+
+.MyProducts .tableContainer{
+    overflow-y: hidden;
+}

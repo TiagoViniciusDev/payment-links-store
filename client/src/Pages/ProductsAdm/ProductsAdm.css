@@ -1,0 +1,94 @@
+:root{
+    --ProductsAdmGapRows: 2em;
+    --ProductsAdmRowsPadding: 1em 2em;
+    --ProductsAdmGridTemplate: 0.3fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.ProductsAdm{
+
+}
+
+.ProductsAdm .optionsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ProductsAdm .optionsContainer .options{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.ProductsAdm .optionsContainer .options button{
+    padding: 1em 2em;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+.ProductsAdm .optionsContainer .options button:hover{
+    opacity: 0.8;
+}
+
+.ProductsAdm .optionsContainer .options button:first-of-type{
+    background-color: var(--green1);
+}
+
+.ProductsAdm .optionsContainer .options button:nth-of-type(2){
+    background-color: rgb(33, 139, 172);
+}
+
+.ProductsAdm .optionsContainer .options button:nth-of-type(3){
+    background-color: var(--cor-principal);
+}
+
+/* TABELA */
+
+.ProductsAdm .table{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border: 1px solid white;
+}
+
+.ProductsAdm .tableHeader{
+    display: grid;
+    grid-template-columns: var(--ProductsAdmGridTemplate);
+    gap: var(--ProductsAdmGapRows);
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: var(--ProductsAdmRowsPadding)
+}
+
+.ProductsAdm .tableHeader h2:first-of-type{
+    /* background-color: red; */
+}
+
+.ProductsAdm .row{
+    display: grid;
+    grid-template-columns: var(--ProductsAdmGridTemplate);
+    gap: var(--ProductsAdmGapRows);
+    align-items: center;
+
+    border-bottom: 1px solid white;
+    padding: var(--ProductsAdmRowsPadding);
+}
+
+.ProductsAdm .row input{
+    height: 1.5em;
+}
+
+.ProductsAdm .row:last-of-type{
+    border-bottom: none;
+}
+
+.ProductsAdm .row .rowImg{
+    width: 5em;
+    height: 5em;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+/*  */

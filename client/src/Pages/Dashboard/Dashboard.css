@@ -1,0 +1,26 @@
+.Dashboard{
+    padding: var(--paddingAdmPages);
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.Dashboard .dashboardItem{
+    width: calc(33% - 0.5em);
+    padding: 1em;
+    background-color: darkcyan;
+    border-radius: 0.5em;
+    height: fit-content;
+}
+
+.Dashboard .dashboardItem h2{
+    font-size: 1.2em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid black;
+}
+
+.Dashboard .dashboardItem .itemInfo{
+    margin-left: 1.2em;
+    margin-top: 0.5em;
+}

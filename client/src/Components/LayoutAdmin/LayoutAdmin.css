@@ -1,0 +1,13 @@
+.LayoutAdmin{
+    display: flex;
+}
+
+.LayoutAdmin .AdminSideMenu{
+    position: fixed;
+    width: fit-content;
+    min-width: 25em;
+}
+
+.LayoutAdmin > div:nth-of-type(2){
+    padding-left: 25em;
+}

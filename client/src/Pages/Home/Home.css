@@ -1,0 +1,62 @@
+.Section{
+    margin-bottom: 3em;
+}
+
+.Section .container .title{
+    display: flex;
+    align-items: top;
+    gap: 0.5em;
+}
+
+.Section .container .title h2{
+    cursor: pointer;
+}
+
+.Section .container .title svg{
+    color: var(--cor-principal);
+    font-size: 2em;
+}
+
+.Section .container .produtosSlider{
+    display: flex;
+    align-items: top;
+    gap: 1em;
+    margin: 1em 0;
+    overflow-x: auto;
+}
+
+/*BOTÔES DE NAVEGAÇÂO*/
+
+/* Estilizando o botão "Next" */
+.swiper-button-next {
+    background-color: #000; /* Cor de fundo */
+    color: #fff !important; /* Cor do ícone */
+    border-radius: 50%; /* Tornar o botão redondo */
+    width: 60px !important; /* Largura do botão */
+    height: 60px !important; /* Altura do botão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8; /* Transparência */
+  }
+  
+  .swiper-button-next:hover {
+    opacity: 1; /* Transparência ao passar o mouse */
+  }
+  
+  /* Estilizando o botão "Prev" */
+  .swiper-button-prev {
+    background-color: #000;
+    color: #fff !important;
+    border-radius: 50%;
+    width: 60px !important;
+    height: 60px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+  }
+  
+  .swiper-button-prev:hover {
+    opacity: 1;
+  }

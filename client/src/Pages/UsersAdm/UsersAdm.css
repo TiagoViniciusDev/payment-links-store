@@ -1,0 +1,84 @@
+:root{
+    --UsersAdmGapRows: 2em;
+    --UsersAdmRowsPadding: 1em 2em;
+    --UsersAdmGridTemplate: 0.3fr 1fr 1fr 1fr;
+}
+
+.UsersAdm{
+
+}
+
+.UsersAdm .optionsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.UsersAdm .optionsContainer .options{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.UsersAdm .optionsContainer .options button{
+    padding: 1em 2em;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+.UsersAdm .optionsContainer .options button:hover{
+    opacity: 0.8;
+}
+
+.UsersAdm .optionsContainer .options button:first-of-type{
+    background-color: var(--cor-principal);
+}
+
+/* TABELA */
+
+.UsersAdm .table{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border: 1px solid white;
+}
+
+.UsersAdm .tableHeader{
+    display: grid;
+    grid-template-columns: var(--UsersAdmGridTemplate);
+    gap: var(--UsersAdmGapRows);
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: var(--UsersAdmRowsPadding)
+}
+
+.UsersAdm .tableHeader h2:first-of-type{
+    /* background-color: red; */
+}
+
+.UsersAdm .row{
+    display: grid;
+    grid-template-columns: var(--UsersAdmGridTemplate);
+    gap: var(--UsersAdmGapRows);
+    align-items: center;
+
+    border-bottom: 1px solid white;
+    padding: var(--UsersAdmRowsPadding);
+}
+
+.UsersAdm .row input{
+    height: 1.5em;
+}
+
+.UsersAdm .row:last-of-type{
+    border-bottom: none;
+}
+
+.UsersAdm .row .rowImg{
+    width: 5em;
+    height: 5em;
+    background-color: white;
+}
+
+/*  */

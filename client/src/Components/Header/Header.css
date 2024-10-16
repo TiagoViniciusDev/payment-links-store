@@ -1,0 +1,214 @@
+.Header{
+    padding: 2em 0;
+}
+
+.Header .container{
+    position: relative;
+}
+
+.Header .container .headerTop{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    justify-content: space-between;
+}
+
+.Header .container .headerTop .logo{
+    cursor: pointer;
+}
+
+.Header .container .headerTop .logo h2 span{
+    color: var(--cor-principal);
+}
+
+.Header .container .headerTop .headerContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Header .container .headerTop .searchBar{
+    display: flex;
+    align-items: center;
+    width: 35%;
+}
+
+.Header .container .headerTop .searchBar input, .Header .container .headerTop .searchBar button{
+    height: 3em;
+    border: none;
+}
+
+.Header .container .headerTop .searchBar input{
+   width: 100%;
+   border-radius: 2em 0% 0% 2em;
+   padding: 0 2em;
+}
+
+.Header .container .headerTop .searchBar input:focus{
+    border: none;
+    outline: none;
+}
+
+.Header .container .headerTop .searchBar button{
+    padding: 0 1.2em;
+    padding-right: 1.4em;
+    border-radius: 0 2em 2em 0;
+    cursor: pointer;
+    background-color: white;
+}
+
+.Header .container .headerTop .searchBar button:hover{
+    background-color: var(--cor-principal);
+    color: white;
+}
+
+.Header .container .headerTop .user{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+}
+
+.Header .container .headerTop .user .userImg{
+    width: 3em;
+    height: 3em;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.Header .container .headerTop .user svg{
+    font-size: 3em;
+    color: red;
+}
+
+.Header .container .headerTop .user .text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.Header .container .headerTop .user .text p:nth-of-type(1){
+    font-size: 0.8em;
+}
+
+.Header .container .headerTop .user .text p:nth-of-type(2){
+    font-weight: 700;
+}
+
+.Header .container > nav{
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    text-transform: uppercase;
+}
+
+.Header .container > nav .mobileBtn{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+    display: none;
+}
+
+.Header .container > nav svg{
+    font-size: 1.2em;
+    cursor: pointer;
+    /* display: none; */
+}
+
+.Header .container > nav a{
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.Header .container > nav a:first-of-type{
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.Header .container > nav a:hover > svg{
+    rotate: 360deg;
+    transition: 1s;
+}
+
+.Header .container > nav a:hover{
+    color: var(--cor-principal);
+}
+
+.Header .container .allCategories{
+    position: absolute;
+    width: 100%;
+    padding: 2em 2em;
+    background-color: rgba(30,30,30,0.7);
+    backdrop-filter: blur(5px); /* desfoque do fundo */
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    z-index: 9999999;
+}
+
+.Header .container .allCategories .category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+}
+
+.Header .container .allCategories .category .categoryImg{
+    width: 6em;
+    height: 6em;
+    background-color: white;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+}
+
+.Header .container .allCategories .category p{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 800px){
+    .Header .container .headerTop{
+        display: flex;
+        flex-direction: column; /* Altera a direção dos elementos para coluna */
+    }
+
+    .Header .container .headerTop .searchBar{
+        width: 90%;
+        max-width: 30em;
+    }
+
+
+    .Header .container .headerTop .user{
+        display: none;
+    }
+
+    .Header .container > nav svg{
+        display: block;
+    }
+
+    .Header .container > nav .mobileBtn{
+        display: flex;
+    }
+
+    .Header .container > nav a:nth-of-type(1){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .Header .container > nav a:last-of-type{
+        display: none !important;
+    }
+}
+

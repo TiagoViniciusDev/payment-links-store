@@ -1,0 +1,130 @@
+.Profile .div1{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+.Profile > .container{
+    max-width: 50em;
+}
+
+.Profile .div1 .profileImgContainer{
+    position: relative;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.Profile .div1 .profileImgContainer:hover > img{
+    opacity: 0.2;
+    background-color: white;
+}
+
+.Profile .div1 .profileImgContainer:hover > svg{
+    display: block;
+}
+
+.Profile .div1 .profileImgContainer svg{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2em;
+    transition: 0.5s;
+}
+
+.Profile .div1 .profileImgContainer .profileImg{
+    width: 14em;
+    height: 14em;
+    border-radius: 100%;
+    transition: 0.5s;
+}
+
+.Profile .div1 .profileInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.Profile .div1 .profileInfo input{
+    height: 3em;
+    padding: 0 1em;
+}
+
+.Profile .div1 .profileInfo input[type="email"]{
+    cursor: not-allowed;
+}
+
+.Profile .div1 .profileInfo .password{
+    width: 100%;
+    position: relative;
+}
+
+.Profile .div1 .profileInfo .password input{
+    width: 100%;
+    padding-right: 3em;
+}
+
+.Profile .div1 .profileInfo .password svg{
+    position: absolute;
+    right: 0.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.Profile .div1 .profileInfo .buttons{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1em;
+}
+
+.Profile .div1 .profileInfo .buttons button{
+    height: 3em;
+    width: 50%;
+    cursor: pointer;
+}
+
+.Profile .div2{
+    display: flex;
+    gap: 0.5em;
+    flex-direction: column;
+}
+
+.Profile .div2 > div{
+    width: 100%;
+    padding: 1em;
+    border: 1px solid black;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Profile .div2 > div:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.Profile .div2 > div svg{
+    font-size: 2.5em;
+}
+
+.Profile .div2 > div p:first-of-type{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 800px){
+    .Profile .div1{
+        flex-direction: column;
+        padding: 0 2em;
+        margin-bottom: 2em;
+        gap: 1em;
+    }
+}

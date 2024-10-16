@@ -1,0 +1,6 @@
+.Search .container .productsContainer{
+    display: flex;
+    align-items: top;
+    gap: 2em;
+    flex-wrap: wrap;
+}
